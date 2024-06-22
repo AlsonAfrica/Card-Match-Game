@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="Heading">WELCOME TO MY CARD GAME</h1>
+<p class="slogan"><q>Turn Towards Your Fate!</q></p>
+<p class="score-score">Score: <span class="Score">0</span></p>
+<div class="actions">
+    <button onclick="restart()">Restart</button>
+</div>
+<div class="Container">
+    <div class="game-board" id="game-board">
+       
+    </div>
+    <!-- <h1 class="Heading">WELCOME TO MY CARD GAME</h1>
+    <p class="slogan"><q>Turn Towards Your Fate!</q></p>
+    <p>Score: <span class="Score"></span></p>
+    <div class="actions">
+      <button onclick="restart()">Restart</button>
+    </div> -->
+    <!-- <div class="Container">
+        <div class="game-board">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>A</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>B</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>C</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>A</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>B</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>D</h2>
+                  </div>
+                </div>
+              </div><div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>F</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>D</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>H</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>E</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>H</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>E</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>G</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>G</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>A</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2></h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>F</h2>
+                  </div>
+                </div>
+              </div>
+    
+        </div>
+
+
+    </div>
+    -->
+
+   
+    
+    <script src="card.js"></script>
+</body>
+</html>
